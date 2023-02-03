@@ -1,0 +1,32 @@
+
+### Criar Usuário
+POST http://localhost:3003/create
+Content-Type: application/json
+
+{
+    "name": "Han Solo",
+    "email": "hs@gmail.com",
+    "password": "456"
+}
+
+### Criar Post
+POST http://localhost:3003/post
+Content-Type: application/json
+
+{
+    "photo": "Foto",
+    "description": "Foto do Yoda",
+    "type": "normal",
+    "createdAt": "2023-02-03",
+    "authorId": "a888037d-bfaa-4d7b-9dfc-5bd42291a6cf",
+    
+}
+
+
+### Buscar Post por Id
+GET http://localhost:3003//posts/:id
+Content-Type: application/json
+
+{
+    "id": ""
+}

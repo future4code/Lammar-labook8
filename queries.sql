@@ -1,8 +1,4 @@
-import { connection } from "./database/connections"
-
-connection
-   .raw(`
-      CREATE TABLE IF NOT EXISTS labook_users(
+ CREATE TABLE IF NOT EXISTS labook_users(
          id VARCHAR(255) PRIMARY KEY,
          name VARCHAR(255) NOT NULL,
          email VARCHAR(255) UNIQUE NOT NULL,
@@ -18,8 +14,10 @@ connection
          author_id VARCHAR(255),
          FOREIGN KEY (author_id) REFERENCES labook_users (id)
       )
-   `)
-   .then(() => {
-    console.log(`Tables created successfully!`)
-})
-.catch((error: any) => console.log(error.sqlMessage || error.message))
+
+      CREATE TABLE IF NOT EXISTS labook_users_friendship (
+         id VARCHAR (255) PRIMARY KEY,
+         user_id VARCHAR (255) NOT NULL,
+         friendship_id VARCHAR (255) NOT NULL,
+         FOREIGN KEY (user_id) REFERENCES labook_users (id)
+      );
