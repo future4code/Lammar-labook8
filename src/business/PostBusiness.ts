@@ -53,12 +53,3 @@ export class PostBusiness {
             
             }       
 }
-
-// const postDatabase = new PostDatabase
-            
-//                         await postDatabase.findPostById(postId)
-            
-//                     }catch (error:any) {
-//                         throw new Error (error.message)
-//                     }    
-//                    }

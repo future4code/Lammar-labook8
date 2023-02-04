@@ -19,3 +19,8 @@ DOCUMENTAÇÂO
 O QUE FUNCIONA
 
 -- POST/create - criar usuário
+
+
+LINK do DEPLOY
+https://labook-1.onrender.com
+(apesar de minhas tentativas, deu erro)

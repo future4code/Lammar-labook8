@@ -18,7 +18,7 @@ Content-Type: application/json
     "description": "Foto do Yoda",
     "type": "normal",
     "createdAt": "2023-02-03",
-    "authorId": "a888037d-bfaa-4d7b-9dfc-5bd42291a6cf",
+    "authorId": "167584",
     
 }
 
@@ -28,5 +28,5 @@ GET http://localhost:3003//posts/:id
 Content-Type: application/json
 
 {
-    "id": ""
+    "id": "authorId"
 }

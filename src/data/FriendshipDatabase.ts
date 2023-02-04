@@ -1,20 +1,22 @@
-import { UserInputDTO } from "../model/userDTO";
-import { BaseDatabase } from "./BaseDatabase";
+
+// import { BaseDatabase } from "./BaseDatabase";
+// import { friend, FriendshipInputDTO } from "../model/friendshipDTO";
 
 
-export class UserDatabase extends BaseDatabase {
+// export class FriendshipDatabase extends BaseDatabase {
    
-    createUser = async(user:UserInputDTO): Promise<void> => {
-        try{
-            await UserDatabase.connection.insert({
-                id: user.id,
-                name: user.name,
-                email: user.email,
-                password: user.password
-            }).into('labook_users')
-        }catch (error:any) {
-            throw new Error (error.message)
-        }    
-       }
+//     createFriendship = async(user:any): Promise<void> => {
+//         try{
+//             const friends: FriendshipInputDTO[] = []
+//             await FriendshipDatabase.connection.insert({
+//                 id: friend.id,
+//                 friend_id:friend.friendId,
+//                 author_id: friend.authorId
 
-}
+//                  }).into('labook_users_friendship')
+//         }catch (error:any) {
+//             throw new Error (error.message)
+//         }    
+//        }
+
+// }

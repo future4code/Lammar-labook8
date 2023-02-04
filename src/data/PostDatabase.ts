@@ -36,22 +36,3 @@ export class PostDatabase extends BaseDatabase {
        }
     static findPostById: any;
 }
-
-
-// const result = await PostDatabase.connection("labook_posts")
-// .select().where({postId}) 
-
-// return result[0]
-
-// await postId.connection.insert({
-//     id: post.id,
-//     photo: post.photo,
-//     description: post.description,
-//     type: post.type,
-//     createdAt: post.createdAt,
-//     authorId: post.authorId
-
-// }).into('labook_posts')
-// }catch (error:any) {
-// throw new Error (error.message)
-// }   
