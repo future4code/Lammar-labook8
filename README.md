@@ -22,5 +22,8 @@ TABELA USERS
 image
 
 LINK do DEPLOY
-https://labook-1.onrender.com
-(apesar de minhas tentativas, deu erro)
+https://labook3.onrender.com
+
+
+LINK DA DOCUMENTAÇÃO NO POSTMAN
+https://documenter.getpostman.com/view/22349315/2s935prPoN
